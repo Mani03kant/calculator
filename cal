@@ -1,0 +1,50 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+
+  double num1, num2;
+  char operator;
+
+  cout << "Enter two numbers: ";
+  cin >> num1 >> num2;
+
+  cout << "Enter an operator (+, -, *, /, ^, sin, cos, tan, sqrt): ";
+  cin >> operator;
+
+  switch (operator) {
+    case '+':
+      cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+      break;
+    case '-':
+      cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+      break;
+    case '*':
+      cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+      break;
+    case '/':
+      cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+      break;
+    case '^':
+      cout << num1 << " ^ " << num2 << " = " << pow(num1, num2) << endl;
+      break;
+    case 's':
+      cout << "sin(" << num1 << ") = " << sin(num1) << endl;
+      break;
+    case 'c':
+      cout << "cos(" << num1 << ") = " << cos(num1) << endl;
+      break;
+    case 't':
+      cout << "tan(" << num1 << ") = " << tan(num1) << endl;
+      break;
+    case '√':
+      cout << "sqrt(" << num1 << ") = " << sqrt(num1) << endl;
+      break;
+    default:
+      cout << "Invalid operator." << endl;
+  }
+
+  return 0;
+}
